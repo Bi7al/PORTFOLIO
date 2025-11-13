@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortFolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+    <nav class="navbar">
+        <ul class="links">
+            <li class="link"><a href="">Home </a></li>
+            <li class="link"><a href="#skills">Skills</a></li>
+            <!-- <li class="link"><a href="">Testimonials</a></li> -->
+            <li class="link"><a href="">Recent Work</a></li>
+            <li class="link"><a href="#contact-me">Get in Touch</a></li>
+        </ul>
+    </nav>
+    <section class="container-fluid px-0 px-sm-5 vh-100 d-sm-flex ">
+        <div class="d-flex gap-5 flex-column-reverse flex-sm-row justify-content-center  align-items-center">
+            <div class="px-2 col-sm-6 d-flex flex-column align-items-center align-items-sm-start">
+                <h2 class="fs-1 fw-bold mb-4">Muhammad Bilal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur cupiditate maxime possimus
+                    eaque voluptatibus quidem quod veniam voluptate placeat facere aliquid dolor, officia pariatur,
+                    assumenda ut incidunt, aspernatur odit.</p>
+                <a href="https://www.linkedin.com/in/muhammad-bilal-68193b285" target="_blank"><button class="btn px-5 py-3 mt-3">Get in touch ></button></a>
+            </div>
+
+            <img class="rounded-circle col-6 col-sm-3" src="./Assets/picture.png" alt="MyImage">
+
+        </div>
+    </section>
+    <section class="w-100 d-flex align-items-center flex-column vh-100" id="skills">
+        <h2 class="fs-1 fw-bold mb-5 text-center">Skills</h2>
+        <div class="container-fluid gap-5 d-flex flex-column align-items-center">
+            <div class="skills-card ai-engineering">
+                <h3>AI Engineering</h3>
+                <ul>
+                    <li><img src="" alt=""><b>Python</b></li>
+                    <li><img src="" alt=""><b>OpenAI, Gemini API ,LLMs, Langchain, Embeddings, Vector Databases, RAG</b></li>   
+                </ul>
+            </div>
+            <div class="skills-card web-development">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>Javascript</li>
+                    <li>HTML, CSS, Bootstrap, Tailwind, Responsive Design</li>
+                    <li>MongoDB, Express.js, React.js, Node.js</li>
+                    
+                </ul>
+
+
+            </div>
+
+        </div>
+        <div class="d-flex flex-column flex-sm-row gap-4 mt-5" >
+        <a class="btn px-4 py-3" href="https://github.com/Bi7al" target="_blank">Visit My Github</a>
+        <a class="btn px-4 py-3" href="https://www.datacamp.com/portfolio/bilalmuhammad4573" target="_blank">Certifications</a>
+        </div>
+
+
+    </section>
+
+
+    <section class="d-flex align-items-center flex-column w-100 vh-100" id="contact-me">
+        <h2 class="fw-bold mb-5">Contact Me</h2>
+
+        <form class="container contact-form" action="" onsubmit="{(e)=>e.preventdefault()}">
+            <label for="emai" >
+                <h6>Email</h6>
+                <input type="email" name="email" id="email" placeholder="Enter your Email">
+            </label>
+            <label for="mobile">
+
+                <h6>Phone</h6>
+                <input type="phone" name="mobile" id="mobile" placeholder="Enter your Mobile">
+            </label>
+            <label for="message">
+                <h6>Message</h6>
+                <textarea name="message" id="message">Enter Your Message</textarea>
+            </label>
+            <button class="btn contact-form-btn">Submit</button>
+
+        </form>
+    </section>
+</body>
+
+</html>
