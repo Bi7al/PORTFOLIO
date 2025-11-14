@@ -76,9 +76,11 @@ section{
 }
 
 .links{
+    height: 5rem;
     width: 60%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 3rem;
     list-style: none;
 }
