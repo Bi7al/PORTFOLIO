@@ -1,92 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPortFolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
+    <title>Muhammad Bilal | AI Engineer & Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+    </style>
 </head>
+<body class="selection:bg-indigo-500 selection:text-white">
 
+    
 
-
-<body>
-    <nav class="navbar">
-        <ul class="links">
-            <li class="link"><a href="">Home </a></li>
-            <li class="link"><a href="#skills">Skills</a></li>
-            <!-- <li class="link"><a href="">Testimonials</a></li> -->
-            <li class="link"><a href="">Recent Work</a></li>
-            <li class="link"><a href="#contact-me">Get in Touch</a></li>
-        </ul>
-    </nav>
-    <section class="container-fluid px-0 px-sm-5 vh-100 flex-shrink-1 d-sm-flex ">
-        <div class="d-flex gap-5 flex-column-reverse flex-sm-row justify-content-center  align-items-center">
-            <div class="px-2 col-sm-6 d-flex flex-column align-items-center align-items-sm-start">
-                <h2 class="fs-1 fw-bold mb-4">Muhammad Bilal</h2>
-                <p>Hi, I’m Bilal — a software engineer who loves turning ideas into interactive, meaningful digital experiences. I enjoy blending creativity with clean, logical code to build things that look good, feel smooth, and simply work.</p>
-                <a href="https://www.linkedin.com/in/muhammad-bilal-68193b285" target="_blank"><button class="btn px-5 py-3 mt-3">Get in touch ></button></a>
+    <section id="about" class="min-h-screen flex items-center pt-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-sky-400 font-mono tracking-widest uppercase text-sm">Based in Islamabad, Pakistan</h2>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    Hi, I'm <span class="gradient-text">Muhammad Bilal</span>
+                </h1>
+                <p class="text-slate-400 text-lg max-w-lg">
+                    AI Engineer and Software Engineering student specializing in <span class="text-white">LLMs, LangChain, and RAG pipelines</span>. I build intelligent systems and high-performance web applications.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="px-8 py-3 bg-indigo-600 rounded-lg font-semibold hover:scale-105 transition-transform">View My Work</a>
+                    <a href="https://github.com/Bi7al" target="_blank" class="p-3 border border-slate-700 rounded-lg hover:bg-slate-800 transition"><i class="fab fa-github text-xl"></i></a>
+                    <a href="https://linkedin.com/in/muhammad-bilal-68193b285" target="_blank" class="p-3 border border-slate-700 rounded-lg hover:bg-slate-800 transition"><i class="fab fa-linkedin text-xl"></i></a>
+                </div>
             </div>
-
-            <img class="rounded-circle col-6 col-sm-3" src="./Assets/picture.png" alt="MyImage">
-
+            <div class="hidden md:block relative">
+                <div class="w-80 h-80 bg-sky-500/20 rounded-full blur-3xl absolute -top-10 -left-10"></div>
+                <div class="w-80 h-80 glass rounded-2xl animate-float flex items-center justify-center border-2 border-sky-500/30">
+                    <i class="fas fa-brain text-8xl text-sky-400"></i>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="w-100 d-flex align-items-center flex-column flex-shrink-1 py-5" id="skills">
-        <h2 class="fs-1 fw-bold mb-5 text-center">Skills</h2>
-        <div class="container-fluid gap-5 d-flex flex-column align-items-center">
-            <div class="skills-card ai-engineering">
-                <h3>AI Engineering</h3>
-                <ul>
-                    <li><img src="" alt=""><b>Python</b></li>
-                    <li><img src="" alt=""><b>OpenAI, Gemini API ,LLMs, Langchain, Embeddings, Vector Databases, RAG</b></li>   
-                </ul>
+
+    <section id="skills" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Technical <span class="text-sky-400">Toolkit</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-xl hover:border-sky-500 transition-colors">
+                    <i class="fas fa-robot text-sky-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">AI & LLMs</h3>
+                    <ul class="text-slate-400 space-y-2 text-sm">
+                        <li>LangChain & RAG Systems</li>
+                        <li>OpenAI & Gemini APIs</li>
+                        <li>Vector Search (Pinecone, ChromaDB)</li>
+                        <li>Embeddings & Prompt Engineering</li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-xl hover:border-indigo-500 transition-colors">
+                    <i class="fas fa-code text-indigo-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                    <ul class="text-slate-400 space-y-2 text-sm">
+                        <li>React.js & Next.js</li>
+                        <li>TypeScript & JavaScript</li>
+                        <li>Tailwind CSS & Responsive Design</li>
+                        <li>REST API Integration</li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-xl hover:border-purple-500 transition-colors">
+                    <i class="fas fa-terminal text-purple-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Core Engineering</h3>
+                    <ul class="text-slate-400 space-y-2 text-sm">
+                        <li>Python (AsyncIO, OOP)</li>
+                        <li>LLMOps Concepts</li>
+                        <li>Git & GitHub Workflows</li>
+                        <li>Scalable AI Automation</li>
+                    </ul>
+                </div>
             </div>
-            <div class="skills-card web-development">
-                <h3>Web Development</h3>
-                <ul>
-                    <li>Javascript</li>
-                    <li>HTML, CSS, Bootstrap, Tailwind, Responsive Design</li>
-                    <li>MongoDB, Express.js, React.js, Node.js</li>
-                    
-                </ul>
-
-
-            </div>
-
         </div>
-        <div class="d-flex flex-column justify-content-evenly flex-sm-row gap-4 mt-5" >
-        <a class="btn px-4 py-3" href="https://github.com/Bi7al" target="_blank">Visit My Github</a>
-        <a class="btn px-4 py-3" href="https://www.datacamp.com/portfolio/bilalmuhammad4573" target="_blank">Certifications</a>
-        </div>
-
-
     </section>
 
-
-    <section class="d-flex align-items-center justify-content-evenly flex-column w-100 py-5 " id="contact-me">
-        <h2 class="fw-bold mb-5">Contact Me</h2>
-
-        <form class="container contact-form " action="" onsubmit="{(e)=>e.preventdefault()}">
-            <label for="emai" >
-                <h6>Email</h6>
-                <input type="email" name="email" id="email" placeholder="Enter your Email">
-            </label>
-            <label for="mobile">
-
-                <h6>Phone</h6>
-                <input type="phone" name="mobile" id="mobile" placeholder="Enter your Mobile">
-            </label>
-            <label for="message">
-                <h6>Message</h6>
-                <textarea name="message" id="message">Enter Your Message</textarea>
-            </label>
-            <button class="btn contact-form-btn">Submit</button>
-
-        </form>
+    <section id="experience" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Professional <span class="text-sky-400">Journey</span></h2>
+            <div class="space-y-12 border-l-2 border-slate-800 ml-4 pl-8 relative">
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-sky-500 rounded-full border-4 border-slate-950"></div>
+                    <span class="text-sky-400 font-mono text-sm">Present</span>
+                    <h3 class="text-xl font-bold">AI Engineering & Python Projects</h3>
+                    <p class="text-slate-400 italic mb-4">Certification Based (Remote)</p>
+                    <ul class="list-disc list-inside text-slate-400 space-y-2 text-sm">
+                        <li>Built RAG pipelines and LLM-powered applications using LangChain.</li>
+                        <li>Implemented function calling and vector database operations.</li>
+                        <li>Developed Python modules using OOP, decorators, and context managers.</li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950"></div>
+                    <span class="text-slate-500 font-mono text-sm">June 2024 - Sept 2024</span>
+                    <h3 class="text-xl font-bold">React & Next.js Developer</h3>
+                    <p class="text-slate-400 italic mb-4">ByteWise Pakistan (Remote)</p>
+                    <ul class="list-disc list-inside text-slate-400 space-y-2 text-sm">
+                        <li>Developed responsive web applications focusing on React.js and Next.js.</li>
+                        <li>Collaborated in teams to deliver high-quality client solutions.</li>
+                        <li>Worked with TypeScript, Tailwind CSS, and modern deployment workflows on Vercel.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="projects" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Featured <span class="text-sky-400">Projects</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <div class="glass rounded-xl overflow-hidden group p-6">
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">Booklify</h3>
+                    <p class="text-slate-400 text-xs mb-4">AI extracts book titles and provides recommendations.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">React</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">AI Integration</span>
+                    </div>
+                    <a href="https://booklify-frontend.vercel.app/" target="_blank" class="text-sky-400 text-sm hover:underline">Live Demo</a>
+                </div>
+                <div class="glass rounded-xl overflow-hidden group p-6">
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">Lymora</h3>
+                    <p class="text-slate-400 text-xs mb-4">Portfolio website built for a client's business.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">React</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">Tailwind CSS</span>
+                    </div>
+                    <a href="https://lymora.vercel.app/" target="_blank" class="text-sky-400 text-sm hover:underline">Live Demo</a>
+                </div>
+                <div class="glass rounded-xl overflow-hidden group p-6">
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">Medig+</h3>
+                    <p class="text-slate-400 text-xs mb-4">Responsive medical front-end designed during internship.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">Next.js</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">TypeScript</span>
+                    </div>
+                    <a href="https://medig.vercel.app/" target="_blank" class="text-sky-400 text-sm hover:underline">Live Demo</a>
+                </div>
+                <div class="glass rounded-xl overflow-hidden group p-6">
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">DailyNews</h3>
+                    <p class="text-slate-400 text-xs mb-4">Fetches and displays live news using external REST APIs.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">Next.js</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">API Integration</span>
+                    </div>
+                    <a href="https://news-app-rust-ten.vercel.app/" target="_blank" class="text-sky-400 text-sm hover:underline">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-8">Education</h2>
+                <div class="glass p-6 rounded-xl text-left">
+                    <h3 class="text-xl font-bold">BS Software Engineering</h3>
+                    <p class="text-sky-400">International Islamic University, Islamabad</p>
+                    <p class="text-slate-400 text-sm mt-2">2022 — 2026</p>
+                    <p class="text-slate-500 text-xs mt-4">Focused on developing strong academic foundations and practical skills.</p>
+                </div>
+            </div>
+            <div class="space-y-8 text-left">
+                <h2 class="text-3xl font-bold mb-4">Let's <span class="gradient-text">Collaborate</span></h2>
+                <p class="text-slate-400">Open to freelance opportunities and full-time AI/Web roles.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-envelope text-sky-400"></i>
+                        <span class="text-slate-300">bilal.muhammad4573@gmail.com</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-phone text-sky-400"></i>
+                        <span class="text-slate-300">+92-3197404201</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-map-marker-alt text-sky-400"></i>
+                        <span class="text-slate-300">Islamabad, Pakistan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Muhammad Bilal. Built with Next-gen AI inspiration.</p>
+    </footer>
+
 </body>
-
 </html>
