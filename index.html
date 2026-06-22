@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .animate-float { animation: float 6s ease-in-out infinite; }
-        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
     </style>
 </head>
+
 <body class="selection:bg-indigo-500 selection:text-white">
 
-    
+
 
     <section id="about" class="min-h-screen flex items-center pt-20 px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -27,17 +59,26 @@
                     Hi, I'm <span class="gradient-text">Muhammad Bilal</span>
                 </h1>
                 <p class="text-slate-400 text-lg max-w-lg">
-                    Software Engineering Graduate specializing in <span class="text-white">LLMs, LangChain, RAG systems, and scalable backend development</span>. I build intelligent applications, REST APIs, AI agents, and production-ready software solutions.
+                    Software Engineering Graduate specializing in <span class="text-white">LLMs, LangChain, RAG systems,
+                        and scalable backend development</span>. I build intelligent applications, REST APIs, AI agents,
+                    and production-ready software solutions.
                 </p>
                 <div class="flex space-x-4">
-                    <a href="#projects" class="px-8 py-3 bg-indigo-600 rounded-lg font-semibold hover:scale-105 transition-transform">View My Work</a>
-                    <a href="https://github.com/Bi7al" target="_blank" class="p-3 border border-slate-700 rounded-lg hover:bg-slate-800 transition"><i class="fab fa-github text-xl"></i></a>
-                    <a href="https://linkedin.com/in/muhammad-bilal-68193b285" target="_blank" class="p-3 border border-slate-700 rounded-lg hover:bg-slate-800 transition"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#projects"
+                        class="px-8 py-3 bg-indigo-600 rounded-lg font-semibold hover:scale-105 transition-transform">View
+                        My Work</a>
+                    <a href="https://github.com/Bi7al" target="_blank"
+                        class="p-3 border border-slate-700 rounded-lg hover:bg-slate-800 transition"><i
+                            class="fab fa-github text-xl"></i></a>
+                    <a href="https://linkedin.com/in/muhammad-bilal-68193b285" target="_blank"
+                        class="p-3 border border-slate-700 rounded-lg hover:bg-slate-800 transition"><i
+                            class="fab fa-linkedin text-xl"></i></a>
                 </div>
             </div>
             <div class="hidden md:block relative">
                 <div class="w-80 h-80 bg-sky-500/20 rounded-full blur-3xl absolute -top-10 -left-10"></div>
-                <div class="w-80 h-80 glass rounded-2xl animate-float flex items-center justify-center border-2 border-sky-500/30">
+                <div
+                    class="w-80 h-80 glass rounded-2xl animate-float flex items-center justify-center border-2 border-sky-500/30">
                     <i class="fas fa-brain text-8xl text-sky-400"></i>
                 </div>
             </div>
@@ -88,7 +129,8 @@
             <h2 class="text-3xl font-bold mb-12">Professional <span class="text-sky-400">Journey</span></h2>
             <div class="space-y-12 border-l-2 border-slate-800 ml-4 pl-8 relative">
                 <div class="relative">
-                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-sky-500 rounded-full border-4 border-slate-950"></div>
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-sky-500 rounded-full border-4 border-slate-950">
+                    </div>
                     <span class="text-sky-400 font-mono text-sm">Present</span>
                     <h3 class="text-xl font-bold">AI Engineering & Python Projects</h3>
                     <p class="text-slate-400 italic mb-4">Certification Based (Remote)</p>
@@ -99,7 +141,9 @@
                     </ul>
                 </div>
                 <div class="relative">
-                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950"></div>
+                    <div
+                        class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950">
+                    </div>
                     <span class="text-slate-500 font-mono text-sm">June 2024 - Sept 2024</span>
                     <h3 class="text-xl font-bold">React & Next.js Developer</h3>
                     <p class="text-slate-400 italic mb-4">ByteWise Pakistan (Remote)</p>
@@ -115,70 +159,123 @@
 
     <section id="projects" class="py-24 px-6 bg-slate-900/50">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center text-white">Featured <span class="text-sky-400">Projects</span></h2>
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Featured <span
+                    class="text-sky-400">Projects</span></h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
-<div class="glass rounded-xl overflow-hidden group p-6">
-    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">FormOptix AI</h3>
-    <p class="text-slate-400 text-xs mb-4">AI-powered fitness platform backend featuring JWT authentication, workout tracking, MongoDB integration, and a LangChain-powered fitness chatbot using Gemini 2.5 Flash.</p>
-    <div class="flex flex-wrap gap-2 mb-6">
-        <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">Node.js</span>
-        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">Express.js</span>
-        <span class="text-[10px] bg-green-900/50 px-2 py-1 rounded text-green-300">MongoDB</span>
-        <span class="text-[10px] bg-purple-900/50 px-2 py-1 rounded text-purple-300">JWT</span>
-        <span class="text-[10px] bg-yellow-900/50 px-2 py-1 rounded text-yellow-300">LangChain</span>
-        <span class="text-[10px] bg-red-900/50 px-2 py-1 rounded text-red-300">Gemini AI</span>
-    </div>
-    <a href="https://github.com/Bi7al/formoptix-Backend" target="_blank" class="text-sky-400 text-sm hover:underline">GitHub</a>
-</div>
+                <div class="glass rounded-xl overflow-hidden group p-6">
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">FormOptix AI</h3>
+                    <p class="text-slate-400 text-xs mb-4">AI-powered fitness platform backend featuring JWT
+                        authentication, workout tracking, MongoDB integration, and a LangChain-powered fitness chatbot
+                        using Gemini 2.5 Flash.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">Node.js</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">Express.js</span>
+                        <span class="text-[10px] bg-green-900/50 px-2 py-1 rounded text-green-300">MongoDB</span>
+                        <span class="text-[10px] bg-purple-900/50 px-2 py-1 rounded text-purple-300">JWT</span>
+                        <span class="text-[10px] bg-yellow-900/50 px-2 py-1 rounded text-yellow-300">LangChain</span>
+                        <span class="text-[10px] bg-red-900/50 px-2 py-1 rounded text-red-300">Gemini AI</span>
+                    </div>
+                    <a href="https://github.com/Bi7al/formoptix-Backend" target="_blank"
+                        class="text-sky-400 text-sm hover:underline">GitHub</a>
+                </div>
 
                 <div class="glass rounded-xl overflow-hidden group p-6">
-    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">Booklify</h3>
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">Booklify</h3>
 
-    <p class="text-slate-400 text-xs mb-4">
-        AI-powered book discovery platform that extracts book information from user input,
-        performs semantic recommendation generation using LLMs, and orchestrates
-        serverless AI workflows through LangChain pipelines.
-    </p>
+                    <p class="text-slate-400 text-xs mb-4">
+                        AI-powered book discovery platform that extracts book information from user input,
+                        performs semantic recommendation generation using LLMs, and orchestrates
+                        serverless AI workflows through LangChain pipelines.
+                    </p>
 
-    <div class="flex flex-wrap gap-2 mb-6">
-        <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">React</span>
-        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">LangChain</span>
-        <span class="text-[10px] bg-purple-900/50 px-2 py-1 rounded text-purple-300">LLMs</span>
-        <span class="text-[10px] bg-green-900/50 px-2 py-1 rounded text-green-300">Serverless Functions</span>
-        <span class="text-[10px] bg-yellow-900/50 px-2 py-1 rounded text-yellow-300">Prompt Engineering</span>
-    </div>
-
-    <a href="https://booklify-frontend.vercel.app/" target="_blank"
-       class="text-sky-400 text-sm hover:underline">
-       Live Demo
-    </a>
-</div>
-                <div class="glass rounded-xl overflow-hidden group p-6">
-                    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">Lymora</h3>
-                    <p class="text-slate-400 text-xs mb-4">Portfolio website built for a client's business.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">React</span>
-                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">Tailwind CSS</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">LangChain</span>
+                        <span class="text-[10px] bg-purple-900/50 px-2 py-1 rounded text-purple-300">LLMs</span>
+                        <span class="text-[10px] bg-green-900/50 px-2 py-1 rounded text-green-300">Serverless
+                            Functions</span>
+                        <span class="text-[10px] bg-yellow-900/50 px-2 py-1 rounded text-yellow-300">Prompt
+                            Engineering</span>
                     </div>
-                    <a href="https://lymora.vercel.app/" target="_blank" class="text-sky-400 text-sm hover:underline">Live Demo</a>
+
+                    <a href="https://booklify-frontend.vercel.app/" target="_blank"
+                        class="text-sky-400 text-sm hover:underline">
+                        Live Demo
+                    </a>
+                </div>
+                <div class="glass rounded-xl overflow-hidden group p-6">
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">Lymora</h3>
+                    <p class="text-slate-400 text-xs mb-4">
+                        Modern digital agency platform built for a client's agency, featuring service showcases,
+                        portfolio galleries,
+                        client testimonials, quote generation, and responsive multi-page navigation.
+                        Built with React, Vite, Tailwind CSS, Framer Motion, and React Router for a
+                        high-performance user experience.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">React</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">Vite</span>
+                        <span class="text-[10px] bg-green-900/50 px-2 py-1 rounded text-green-300">Tailwind CSS</span>
+                        <span class="text-[10px] bg-purple-900/50 px-2 py-1 rounded text-purple-300">Framer
+                            Motion</span>
+                        <span class="text-[10px] bg-yellow-900/50 px-2 py-1 rounded text-yellow-300">React Router</span>
+                    </div>
+                    <a href="https://lymora-pink.vercel.app/" target="_blank"
+                        class="text-sky-400 text-sm hover:underline">Live Demo</a>
                 </div>
                 <div class="glass rounded-xl overflow-hidden group p-6">
                     <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">Medig+</h3>
-                    <p class="text-slate-400 text-xs mb-4">Responsive medical front-end designed during internship.</p>
+                    <p class="text-slate-400 text-xs mb-4">
+                        Healthcare platform enabling doctor discovery, appointment booking,
+                        and online pharmacy services. Developed with Next.js, React, TypeScript,
+                        Tailwind CSS, and Material UI with a mobile-first responsive design.
+                    </p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">Next.js</span>
-                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">TypeScript</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">React</span>
+                        <span class="text-[10px] bg-green-900/50 px-2 py-1 rounded text-green-300">TypeScript</span>
+                        <span class="text-[10px] bg-purple-900/50 px-2 py-1 rounded text-purple-300">Tailwind CSS</span>
+                        <span class="text-[10px] bg-yellow-900/50 px-2 py-1 rounded text-yellow-300">Material UI</span>
                     </div>
-                    <a href="https://medig.vercel.app/" target="_blank" class="text-sky-400 text-sm hover:underline">Live Demo</a>
+                    <a href="https://medig.vercel.app/" target="_blank"
+                        class="text-sky-400 text-sm hover:underline">Live Demo</a>
+                </div>
+                <div class="glass rounded-xl overflow-hidden group p-6">
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">
+                        Batter Bliss by Khadija
+                    </h3>
+
+                    <p class="text-slate-400 text-xs mb-4">
+                        Professional bakery website built for a local business, featuring a
+                        responsive product showcase for cakes, brownies, cookies, donuts,
+                        cinnamon rolls, and other baked goods. Designed to strengthen the
+                        brand's online presence and provide a seamless browsing experience
+                        across all devices.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">HTML5</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">CSS3</span>
+                        <span class="text-[10px] bg-yellow-900/50 px-2 py-1 rounded text-yellow-300">JavaScript</span>
+                        <span class="text-[10px] bg-green-900/50 px-2 py-1 rounded text-green-300">Responsive
+                            Design</span>
+                        <span class="text-[10px] bg-purple-900/50 px-2 py-1 rounded text-purple-300">Branding</span>
+                    </div>
+
+                    <a href="https://btt-neon.vercel.app/" target="_blank" class="text-sky-400 text-sm hover:underline">
+                        Live Demo
+                    </a>
                 </div>
                 <div class="glass rounded-xl overflow-hidden group p-6">
                     <h3 class="text-lg font-bold mb-2 group-hover:text-sky-400 transition">DailyNews</h3>
                     <p class="text-slate-400 text-xs mb-4">Fetches and displays live news using external REST APIs.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-[10px] bg-sky-900/50 px-2 py-1 rounded text-sky-300">Next.js</span>
-                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">API Integration</span>
+                        <span class="text-[10px] bg-indigo-900/50 px-2 py-1 rounded text-indigo-300">API
+                            Integration</span>
                     </div>
-                    <a href="https://news-app-rust-ten.vercel.app/" target="_blank" class="text-sky-400 text-sm hover:underline">Live Demo</a>
+                    <a href="https://news-app-rust-ten.vercel.app/" target="_blank"
+                        class="text-sky-400 text-sm hover:underline">Live Demo</a>
                 </div>
             </div>
         </div>
@@ -192,7 +289,8 @@
                     <h3 class="text-xl font-bold">BS Software Engineering</h3>
                     <p class="text-sky-400">International Islamic University, Islamabad</p>
                     <p class="text-slate-400 text-sm mt-2">2022 — 2026</p>
-                    <p class="text-slate-500 text-xs mt-4">Focused on developing strong academic foundations and practical skills.</p>
+                    <p class="text-slate-500 text-xs mt-4">Focused on developing strong academic foundations and
+                        practical skills.</p>
                 </div>
             </div>
             <div class="space-y-8 text-left">
@@ -221,4 +319,5 @@
     </footer>
 
 </body>
+
 </html>
